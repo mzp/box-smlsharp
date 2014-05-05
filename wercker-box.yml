@@ -1,0 +1,15 @@
+name: smlsharp-box
+version: 0.0.1
+inherits: wercker/ubuntu12.04-webessentials@1.0.2
+type: service
+platform: ubuntu@12.04
+description: wercker box for SML# a new programming language in the Standard ML family
+keywords:
+  - sml
+  - smlsharp
+packages:
+  - smlsharp@2.0.0
+script: |
+  sudo apt-get update -y
+  sudo wget http://www.pllab.riec.tohoku.ac.jp/smlsharp/download/smlsharp-2.0.0-2_ubuntu-amd64.deb
+  sudo dpkg -i smlsharp-2.0.0-2_ubuntu-amd64.deb
