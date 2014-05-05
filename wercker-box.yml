@@ -11,5 +11,6 @@ packages:
   - smlsharp@2.0.0
 script: |
   sudo apt-get update -y
+  sudo apt-get install -y libc6-dev-i386 lib32gmp-dev
   sudo wget http://www.pllab.riec.tohoku.ac.jp/smlsharp/download/smlsharp-2.0.0-2_ubuntu-amd64.deb
   sudo dpkg -i smlsharp-2.0.0-2_ubuntu-amd64.deb
