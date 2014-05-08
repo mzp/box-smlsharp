@@ -11,5 +11,6 @@ The current SML# version installed in this box is:
 * * *
 
 ## **Changelog:**
+- 1.1.1 - Add some 32bit libraries
 - 1.0.0 - Initial release.
 
