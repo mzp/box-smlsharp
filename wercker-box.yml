@@ -15,7 +15,7 @@ script: |
   sudo aptitude install -y libc6-dev-i386 lib32gmp-dev
   sudo wget http://www.digip.org/jansson/releases/jansson-2.6.tar.gz
   sudo tar xvzf jansson-2.6.tar.gz
-  cd jansson-2.6 && sudo ./configure && sudo make && sudo make install
+  cd jansson-2.6 && sudo CC="gcc -m32" ./configure && sudo make && sudo make install
   sudo wget http://www.pllab.riec.tohoku.ac.jp/smlsharp/download/smlsharp-2.0.0-2_ubuntu-amd64.deb
   sudo dpkg -i smlsharp-2.0.0-2_ubuntu-amd64.deb
   sudo aptitude install -y libcurl3-dev:i386
